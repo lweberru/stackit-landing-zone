@@ -8,25 +8,25 @@ labels = {
 }
 
 landing_zones = {
-  "test-01" = {
+  "luk01" = {
     "corporate" = false
     "env" = "dev"
-    "owner_email" = "lukas@klue.de"
-    "project_code" = "tst01"
-    "project_name" = "Test Projekt 1"
+    "owner_email" = "lukas.weberruss@digits.schwarz"
+    "project_code" = "tst"
+    "project_name" = "Luk Projekt 1"
     "secretsmanager_enabled" = true
   }
 }
 
-organization_id = "0a753513-13fb-46f4-a316-3eccbe84334c"
+organization_id = "af026540-93fd-4712-a772-25a35fec24d4"
 
-owner_email = "lukas@klue.de"
+owner_email = "lukas.weberruss@digits.schwarz"
 
 region = "eu01"
 
 sandboxes = [
   {
-    "project_name" = "Test Sandbox 1"
-    "project_owner_email" = "lukas@klue.de"
+    "project_name" = "Luk Sandbox 1"
+    "project_owner_email" = "lukas.weberruss@digits.schwarz"
   },
 ]

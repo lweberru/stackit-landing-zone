@@ -11,17 +11,17 @@
     "name": "Lukas Landing Zone Dev",
     "company": "Lukas Dev GmbH",
     "companyCode": "luk",
-    "organization": "0a753513-13fb-46f4-a316-3eccbe84334c",
-    "owner": "lukas@klue.de",
+    "organization": "af026540-93fd-4712-a772-25a35fec24d4",
+    "owner": "lukas.weberruss@digits.schwarz",
     "region": "eu01",
     "projects": [
       {
         "id": "public-exmpl",
         "sourceKey": "public-exmpl",
-        "key": "test-01",
-        "name": "Test Projekt 1",
-        "code": "tst01",
-        "owner": "lukas@klue.de",
+        "key": "luk01",
+        "name": "Luk Projekt 1",
+        "code": "tst",
+        "owner": "lukas.weberruss@digits.schwarz",
         "environment": "dev",
         "secretsManager": true
       }
@@ -30,8 +30,8 @@
       {
         "id": "sandbox-0",
         "sourceIndex": 0,
-        "name": "Test Sandbox 1",
-        "owner": "lukas@klue.de"
+        "name": "Luk Sandbox 1",
+        "owner": "lukas.weberruss@digits.schwarz"
       }
     ]
   }
