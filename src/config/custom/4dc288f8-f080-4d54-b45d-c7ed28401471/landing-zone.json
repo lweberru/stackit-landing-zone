@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "landing-zone-configurator-configuration",
+  "id": "4dc288f8-f080-4d54-b45d-c7ed28401471",
+  "template": {
+    "id": "standalone",
+    "source": "src/config/standalone.tfvars",
+    "sha256": "3fe6a764de8f1bb8eb83dbc07034d44d43373e277efdfccc6432c601319e0f03"
+  },
+  "draft": {
+    "name": "Lukas Landing Zone Dev",
+    "company": "Lukas Dev GmbH",
+    "companyCode": "luk",
+    "organization": "0a753513-13fb-46f4-a316-3eccbe84334c",
+    "owner": "lukas@klue.de",
+    "region": "eu01",
+    "projects": [
+      {
+        "id": "public-exmpl",
+        "sourceKey": "public-exmpl",
+        "key": "test-01",
+        "name": "Test Projekt 1",
+        "code": "tst01",
+        "owner": "lukas@klue.de",
+        "environment": "dev",
+        "secretsManager": true
+      }
+    ],
+    "sandboxes": [
+      {
+        "id": "sandbox-0",
+        "sourceIndex": 0,
+        "name": "Test Sandbox 1",
+        "owner": "lukas@klue.de"
+      }
+    ]
+  }
+}
