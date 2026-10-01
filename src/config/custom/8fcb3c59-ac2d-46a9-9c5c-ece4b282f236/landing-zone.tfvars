@@ -3,20 +3,6 @@ company_code = "lzc-dev"
 
 company_name = "Landing Zone Dev Configurator"
 
-federated_identity_providers = [
-  {
-    "assertions" = [
-      {
-        "item" = ""
-        "operator" = ""
-        "value" = ""
-      },
-    ]
-    "issuer" = ""
-    "name" = ""
-  },
-]
-
 firewall_api_secret_version = 1
 
 firewall_bootstrap = true
