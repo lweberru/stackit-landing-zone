@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 3,
+  "kind": "landing-zone-configurator-configuration",
+  "id": "8fcb3c59-ac2d-46a9-9c5c-ece4b282f236",
+  "name": "Dev Landing Zone Configurator Standalone",
+  "origin": {
+    "templateId": "standalone",
+    "source": "src/config/standalone.tfvars",
+    "sha256": "3fe6a764de8f1bb8eb83dbc07034d44d43373e277efdfccc6432c601319e0f03",
+    "acceleratorRevision": "a256f6896d11134fdc351786f1be5eba4e56b2e2"
+  },
+  "features": {
+    "identity": {
+      "company_code": "lzc-dev",
+      "company_name": "Landing Zone Dev Configurator",
+      "labels": {
+        "managed_by": "opentofu"
+      },
+      "organization_id": "af026540-93fd-4712-a772-25a35fec24d4",
+      "owner_email": "lukas.weberruss@digits.cloud",
+      "region": "eu01"
+    },
+    "governance": {
+      "rm_folders": {
+        "landing_zones_corporate": {
+          "name": "Corporate - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        },
+        "landing_zones_public": {
+          "name": "Public - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        },
+        "platform": {
+          "name": "Platform - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        },
+        "sandboxes": {
+          "name": "Sandboxes - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        }
+      },
+      "organization_owners": [
+        "lukas.weberruss@digits.cloud"
+      ]
+    },
+    "management": {
+      "federated_identity_providers": [
+        {
+          "assertions": [
+            {
+              "item": "",
+              "operator": "",
+              "value": ""
+            }
+          ],
+          "issuer": "",
+          "name": ""
+        }
+      ]
+    },
+    "network": {},
+    "platform": {},
+    "projects": {
+      "landing_zones": {},
+      "sandboxes": []
+    },
+    "firewall": {
+      "firewall_bootstrap": true,
+      "firewall_api_secret_version": 1
+    }
+  },
+  "identities": {
+    "landingZones": {},
+    "sandboxes": [],
+    "networkAreas": {}
+  }
+}
