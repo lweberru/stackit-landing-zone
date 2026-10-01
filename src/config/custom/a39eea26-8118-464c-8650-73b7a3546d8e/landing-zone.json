@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 3,
+  "kind": "landing-zone-configurator-configuration",
+  "id": "a39eea26-8118-464c-8650-73b7a3546d8e",
+  "name": "Dev Landing Zone Configurator Standalone",
+  "origin": {
+    "templateId": "standalone",
+    "source": "src/config/standalone.tfvars",
+    "sha256": "3fe6a764de8f1bb8eb83dbc07034d44d43373e277efdfccc6432c601319e0f03",
+    "acceleratorRevision": "a256f6896d11134fdc351786f1be5eba4e56b2e2"
+  },
+  "features": {
+    "identity": {
+      "company_code": "lzc-dev",
+      "company_name": "Landing Zone Dev Configurator",
+      "labels": {
+        "managed_by": "opentofu"
+      },
+      "organization_id": "af026540-93fd-4712-a772-25a35fec24d4",
+      "owner_email": "lukas.weberruss@digits.cloud",
+      "region": "eu01"
+    },
+    "governance": {
+      "rm_folders": {
+        "landing_zones_corporate": {
+          "name": "Corporate - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        },
+        "landing_zones_public": {
+          "name": "Public - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        },
+        "platform": {
+          "name": "Platform - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        },
+        "sandboxes": {
+          "name": "Sandboxes - Dev Configurator",
+          "owner_emails": [],
+          "reader_emails": [],
+          "description": null
+        }
+      },
+      "organization_owners": [
+        "lukas.weberruss@digits.cloud"
+      ]
+    },
+    "management": {},
+    "network": {},
+    "platform": {},
+    "projects": {
+      "landing_zones": {},
+      "sandboxes": [],
+      "landing_zone_namespace_services": {}
+    },
+    "firewall": {
+      "firewall_config": null
+    }
+  },
+  "projectTemplates": [
+    {
+      "id": "510eedcd-374c-4cdd-9252-cc50595ac29d",
+      "key": "vm-public",
+      "name": "Public VMs",
+      "kind": "public",
+      "region": "eu01",
+      "settings": {
+        "env": "dev",
+        "secretsmanager_enabled": true
+      },
+      "parameterPolicy": {
+        "schema_version": 1,
+        "fields": {
+          "env": {
+            "source": "input",
+            "required": true,
+            "default": "dev",
+            "choices": [
+              "dev",
+              "test",
+              "prod"
+            ]
+          },
+          "observability.enabled": {
+            "source": "input",
+            "required": true
+          },
+          "observability.plan_name": {
+            "source": "input",
+            "required": true,
+            "default": "Observability-Starter-EU01",
+            "choices": [
+              "Observability-Monitoring-Medium-EU01",
+              "Observability-Monitoring-XL-EU01",
+              "Observability-Basic-EU01",
+              "Observability-Medium-EU01",
+              "Observability-Large-EU01",
+              "Observability-Monitoring-Large-EU01",
+              "Observability-Starter-EU01",
+              "Observability-Metrics-Endpoint-100k-EU01",
+              "Observability-Monitoring-Starter-EU01",
+              "Observability-Monitoring-XXL-EU01",
+              "Observability-Frontend-Starter-EU01",
+              "Observability-Monitoring-Basic-EU01"
+            ]
+          },
+          "observability.acl": {
+            "source": "input",
+            "required": true,
+            "choices": []
+          },
+          "role_assignments": {
+            "source": "context",
+            "variable": "verified-project-owner",
+            "roles": [
+              "project.member"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "identities": {
+    "landingZones": {},
+    "sandboxes": [],
+    "networkAreas": {}
+  }
+}
