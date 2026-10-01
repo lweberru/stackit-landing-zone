@@ -59,8 +59,7 @@
       "sandboxes": []
     },
     "firewall": {
-      "firewall_bootstrap": true,
-      "firewall_api_secret_version": 1
+      "firewall_config": null
     }
   },
   "identities": {

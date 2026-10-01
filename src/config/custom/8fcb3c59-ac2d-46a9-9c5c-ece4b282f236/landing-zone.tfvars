@@ -3,9 +3,7 @@ company_code = "lzc-dev"
 
 company_name = "Landing Zone Dev Configurator"
 
-firewall_api_secret_version = 1
-
-firewall_bootstrap = true
+firewall_config = null
 
 labels = {
   "managed_by" = "opentofu"
